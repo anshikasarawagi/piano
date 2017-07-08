@@ -159,51 +159,14 @@ new Execute().execute();
 
         public  void playIt(String s)
         {
-            if(flag)
+            if(flag && hm.containsKey(s))
             {
-                switch (s)
-                {
-                    case "a1":hm.put("a1StreamId",soundPool.play(hm.get("a1Id"),1,1,1,0,1));
-                        Log.d(log,hm.get("a1StreamId")+"a1");
-                        break;
-                    case "a1s":hm.put("a1sStreamId",soundPool.play(hm.get("a1sId"),1,1,1,0,1));
-                        Log.d(log,hm.get("a1sStreamId")+"a1s");
-                        break;
-                    case "b1":hm.put("b1StreamId",soundPool.play(hm.get("b1Id"),1,1,1,0,1));
-                        Log.d(log,hm.get("b1StreamId")+"b1");
-                        break;
-                    case "c1":hm.put("c1StreamId",soundPool.play(hm.get("c1Id"),1,1,1,0,1));
-                        Log.d(log,hm.get("c1StreamId")+"c1");
-                        break;
-                    case "c1s":hm.put("c1sStreamId",soundPool.play(hm.get("c1sId"),1,1,1,0,1));
-                        Log.d(log,hm.get("c1sStreamId")+"c1s");
-                        break;
-                    case "c2":hm.put("c2StreamId",soundPool.play(hm.get("c2Id"),1,1,1,0,1));
-                        Log.d(log,hm.get("c2StreamId")+"c2");
-                        break;
-                    case "d1":hm.put("d1StreamId",soundPool.play(hm.get("d1Id"),1,1,1,0,1));
-                        Log.d(log,hm.get("d1StreamId")+"d1");
-                        break;
-                    case "d1s":hm.put("d1sStreamId",soundPool.play(hm.get("d1sId"),1,1,1,0,1));
-                        Log.d(log,hm.get("d1sStreamId")+"d1s");
-                        break;
-                    case "e1":hm.put("e1StreamId",soundPool.play(hm.get("e1Id"),1,1,1,0,1));
-                        Log.d(log,hm.get("e1StreamId")+"e1");
-                        break;
-                    case "f1":hm.put("f1StreamId",soundPool.play(hm.get("f1Id"),1,1,1,0,1));
-                        Log.d(log,hm.get("f1StreamId")+"f1");
-                        break;
-                    case "f1s":hm.put("f1sStreamId",soundPool.play(hm.get("f1sId"),1,1,1,0,1));
-                        Log.d(log,hm.get("f1sStreamId")+"f1s");
-                        break;
-                    case "g1":hm.put("g1StreamId",soundPool.play(hm.get("g1Id"),1,1,1,0,1));
-                        Log.d(log,hm.get("g1StreamId")+"g1");
-                        break;
-                    case "g1s":hm.put("g1sStreamId",soundPool.play(hm.get("g1sId"),1,1,1,0,1));
-                        Log.d(log,hm.get("g1sStreamId")+"g1s");
-                        break;
-                    default:
-                }
+
+
+
+                    hm.put(s+"StreamId",soundPool.play(hm.get(s),1,1,1,0,1));
+                Log.d(log,s);
+
 
             }
 
